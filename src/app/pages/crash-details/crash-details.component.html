@@ -1,0 +1,18 @@
+<div *ngIf="crashDetails">
+    <p>First Car : {{crashDetails.vehicle_type_code1}}</p>
+    <p>Second Car : {{crashDetails.vehicle_type_code2}}</p>
+    <p>Crash Date : {{crashDetails.crash_date | date}}</p>
+    <p>Crash Time : {{crashDetails.crash_time}}</p>
+    <p>collision id : {{crashDetails.collision_id}}</p>
+    <p>Contributing factor First Car : {{crashDetails.contributing_factor_vehicle_1}}</p>
+    <p>Contributing factor Second Car : {{crashDetails.contributing_factor_vehicle_2}}</p>
+    <p>No of. cyclist injured : {{crashDetails.number_of_cyclist_injured}}</p>
+    <p>No of. cyclist killed : {{crashDetails.number_of_cyclist_killed}}</p>
+    <p>No of. motorist injured : {{crashDetails.number_of_motorist_injured}}</p>
+    <p>No of. motorist killed : {{crashDetails.number_of_motorist_injured}}</p>
+    <p>No of. pedestrians Injured : {{crashDetails.number_of_pedestrians_injured}}</p>
+    <p>No of. pedestrians killed : {{crashDetails.number_of_pedestrians_killed}}</p>
+    <p>No of. persons Injured : {{crashDetails.number_of_persons_injured}}</p>
+    <p>No of. persons killed : {{crashDetails.number_of_persons_killed}}</p>
+    <p>on street name : {{crashDetails.on_street_name}}</p>
+</div>

@@ -1,0 +1,16 @@
+<nz-date-picker [(ngModel)]="date" nzShowTime nzFormat="yyyy-MM-dd HH:mm:ss" (ngModelChange)="_onDateChange()">
+</nz-date-picker>
+
+<nz-spin [nzSpinning]="loading">
+<div nz-row>
+    <div class="parent-card" nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="6" nzXl="6"
+        *ngFor="let crashDetail of listOfCrashDetails">
+        <nz-card class="card" (click)="_detailView(crashDetail)">
+            <p>First Car : {{crashDetail.vehicle_type_code1}}</p>
+            <p>Second Car : {{crashDetail.vehicle_type_code2}}</p>
+            <p>Crash Date : {{crashDetail.crash_date | date}}</p>
+            <p>Crash Time : {{crashDetail.crash_time}}</p>
+        </nz-card>
+    </div>
+</div>
+</nz-spin>
